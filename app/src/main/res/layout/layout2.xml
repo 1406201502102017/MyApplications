@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    android:orientation="vertical"
+    android:scrollbarSize="12dp"
+    tools:context=".hw1.Layout">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="cursive"
+        android:hint="name"
+        android:inputType="number|textPersonName|text|textPassword|textEmailAddress|phone"
+        android:scrollbarSize="14dp"
+        android:text="Имя"
+        android:textSize="42sp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="cursive"
+        android:hint="name"
+        android:inputType="number|textPersonName|text|textPassword|textEmailAddress|phone"
+        android:scrollbarSize="14dp"
+        android:text="Отчество"
+        android:textSize="42sp"
+        tools:ignore="DuplicateIds" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="cursive"
+        android:hint="name"
+        android:inputType="number|textPersonName|text|textPassword|textEmailAddress|phone"
+        android:scrollbarSize="14dp"
+        android:text="Фамилия"
+        android:textSize="42sp"
+        tools:ignore="DuplicateIds" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
