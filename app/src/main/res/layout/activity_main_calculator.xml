@@ -226,6 +226,7 @@
             android:textSize="@dimen/button_text_size_20"
             tools:ignore="ButtonStyle,SpUsage" />
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/fourthPanel"
         android:layout_width="0dp"
