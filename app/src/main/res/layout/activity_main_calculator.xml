@@ -11,7 +11,7 @@
         android:id="@+id/imageView4"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/kawasaki_ninja_zx_10r"
+        app:srcCompat="@drawable/kawasaki_ninja_zx_10r_1"
         android:scaleType="centerCrop"
         tools:ignore="ContentDescription,MissingConstraints" />
 
@@ -285,5 +285,4 @@
             tools:ignore="ButtonStyle,SpUsage" />
 
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
