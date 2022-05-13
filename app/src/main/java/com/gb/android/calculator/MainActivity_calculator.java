@@ -36,7 +36,7 @@ public class MainActivity_calculator extends AppCompatActivity {
     }
 
     @SuppressLint("SetTextI18n")
-    @Override
+    @Override//
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         lastOperation = savedInstanceState.getString("OPERATION");
