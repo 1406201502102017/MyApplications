@@ -26,7 +26,7 @@ public class MainActivity_calculator extends AppCompatActivity {
         result = findViewById(R.id.result);
         operation = findViewById(R.id.operation);
         number = findViewById(R.id.number);
-    }
+    }//
 
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
