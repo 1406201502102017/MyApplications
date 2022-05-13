@@ -47,11 +47,10 @@
         android:layout_height="wrap_content"
         android:inputType="phone"
         android:textSize="@dimen/button_edit_text_size"
+        app:layout_constraintBottom_toTopOf="@id/firstPanel"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/firstPanel"
-        tools:ignore="Autofill,LabelFor,MissingConstraints,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteY="170dp" />
+        tools:ignore="Autofill,LabelFor,MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <LinearLayout
         android:id="@+id/firstPanel"
@@ -285,4 +284,5 @@
             tools:ignore="ButtonStyle,SpUsage" />
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
