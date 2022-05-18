@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    android:orientation="vertical"
+    style="@style/AppTheme">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/kawasaki_ninja_zx_10r_1"
+        tools:ignore="ContentDescription,MissingConstraints,ImageContrastCheck,ImageContrastCheck,ImageContrastCheck,ImageContrastCheck,ImageContrastCheck,ImageContrastCheck,ImageContrastCheck,ImageContrastCheck,ImageContrastCheck"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_gray"
+        android:textSize="@dimen/button_text_size_20"
+        app:layout_constraintBottom_toTopOf="@+id/operation"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/operation"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints,SpUsage" />
+
+    <TextView
+        android:id="@+id/operation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_gray"
+        android:textSize="@dimen/button_text_size_20"
+        app:layout_constraintBottom_toTopOf="@+id/number"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@id/result"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpUsage" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:textSize="@dimen/button_edit_text_size"
+        app:layout_constraintBottom_toTopOf="@id/firstPanel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="Autofill,LabelFor,MissingConstraints,NotSibling,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <LinearLayout
+        android:id="@+id/firstPanel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/number">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_size_18"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:onClick="onNumberClick"
+            android:text="@string/buttonOne"
+            android:textColor="@color/black"
+            android:textSize="@dimen/button_text_size_20"
+            app:backgroundTint="@color/lime"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_size_18"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:onClick="onNumberClick"
+            android:text="@string/buttonTwo"
+            android:textColor="@color/black"
+            android:textSize="@dimen/button_text_size_20"
+            app:backgroundTint="@color/lime"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_size_18"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:onClick="onNumberClick"
+            android:text="@string/buttonThree"
+            android:textColor="@color/black"
+            android:textSize="@dimen/button_text_size_20"
+            app:backgroundTint="@color/lime"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_size_18"
+            android:layout_weight="1"
+            android:onClick="onOperationClick"
+            android:text="@string/buttonAdd"
+            android:textColor="@color/Yellow"
+            android:textSize="@dimen/button_text_size_20"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondPanel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstPanel">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_size_18"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:onClick="onNumberClick"
+            android:text="@string/buttonFour"
+            android:textColor="@color/black"
+            android:textSize="@dimen/button_text_size_20"
+            app:backgroundTint="@color/lime"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_size_18"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:onClick="onNumberClick"
+            android:text="@string/buttonFive"
+            android:textColor="@color/black"
+            android:textSize="@dimen/button_text_size_20"
+            app:backgroundTint="@color/lime"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_size_18"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:onClick="onNumberClick"
+            android:text="@string/buttonSix"
+            android:textColor="@color/black"
+            android:textSize="@dimen/button_text_size_20"
+            app:backgroundTint="@color/lime"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_size_18"
+            android:layout_weight="1"
+            android:onClick="onOperationClick"
+            android:text="@string/buttonSubtract"
+            android:textColor="@color/Yellow"
+            android:textSize="@dimen/button_text_size_20"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdPanel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondPanel">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_size_18"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:onClick="onNumberClick"
+            android:text="@string/buttonSeven"
+            android:textColor="@color/black"
+            android:textSize="@dimen/button_text_size_20"
+            app:backgroundTint="@color/lime"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_size_18"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:onClick="onNumberClick"
+            android:text="@string/buttonEight"
+            android:textColor="@color/black"
+            android:textSize="@dimen/button_text_size_20"
+            app:backgroundTint="@color/lime"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_size_18"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:onClick="onNumberClick"
+            android:text="@string/buttonNine"
+            android:textColor="@color/black"
+            android:textSize="@dimen/button_text_size_20"
+            app:backgroundTint="@color/lime"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_size_18"
+            android:layout_weight="1"
+            android:onClick="onOperationClick"
+            android:text="@string/buttonMultiply"
+            android:textColor="@color/Yellow"
+            android:textSize="@dimen/button_text_size_20"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fourthPanel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thirdPanel">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_size_18"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:onClick="onNumberClick"
+            android:text="@string/buttonZero"
+            android:textColor="@color/black"
+            android:textSize="@dimen/button_text_size_20"
+            app:backgroundTint="@color/lime"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_size_18"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:onClick="onNumberClick"
+            android:text="@string/buttonDot"
+            android:textColor="@color/Yellow"
+            android:textSize="@dimen/button_text_size_20"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_size_18"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:onClick="onOperationClick"
+            android:text="@string/buttonEqual"
+            android:textColor="@color/Yellow"
+            android:textSize="@dimen/button_text_size_20"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_size_18"
+            android:layout_weight="1"
+            android:onClick="onOperationClick"
+            android:text="@string/buttonDivide"
+            android:textColor="@color/Yellow"
+            android:textSize="@dimen/button_text_size_20"
+            tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourthPanel"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radioButtonMaterialLight"
+            android:layout_width="160dp"
+            android:layout_height="35dp"
+            android:text="@string/material_light"
+            android:textSize="@dimen/textSize_16"
+            android:textStyle="normal"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radioButtonMaterialDark"
+            android:layout_width="160dp"
+            android:layout_height="35dp"
+            android:text="@string/material_dark"
+            android:textSize="@dimen/textSize_16"
+            android:textStyle="normal"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
