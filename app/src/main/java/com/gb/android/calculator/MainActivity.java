@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
     }
-    //-------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         outState.putString("OPERATION", lastOperation);
