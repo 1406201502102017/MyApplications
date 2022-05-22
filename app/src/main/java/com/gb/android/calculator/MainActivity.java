@@ -1,6 +1,7 @@
 package com.gb.android.calculator;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -14,13 +15,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.radiobutton.MaterialRadioButton;
 /*
+homework #4
 1. Переделайте все кнопки на материал.
 2. Все размеры и строки сделайте ресурсами.
 3. Создайте стиль для своего приложения.
-4. * Создайте светлую и тёмную тему для приложения.
+4. *Создайте светлую и тёмную тему для приложения.
+homework#5
+1. Создайте активити с настройками, где включите выбор темы приложения.
+2. Доделайте приложение «Калькулятор». Это последний урок с созданием приложения
+«Калькулятор».
  */
+public class MainActivity extends AppCompatActivity {
 
-public class MainActivityCalculatorHW4 extends AppCompatActivity {
     TextView result;
     TextView operation;
     EditText number;
@@ -39,13 +45,19 @@ public class MainActivityCalculatorHW4 extends AppCompatActivity {
 
         setTheme(getAppTheme(R.style.MyCoolStyle));
 
-        setContentView(R.layout.activity_main_calculator_hw_4);
+        setContentView(R.layout.activity_main);
 
         initThemeChooser();
 
         result = findViewById(R.id.result);
         operation = findViewById(R.id.operation);
         number = findViewById(R.id.number);
+
+        Intent intent = getIntent();
+        Bundle bundle = intent.getExtras();
+        if (bundle == null) {
+            return;
+        }
     }
     //-------------------------------------------------------------------------------------
     @Override
