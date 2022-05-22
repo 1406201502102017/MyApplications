@@ -38,7 +38,6 @@ public class MainActivityStart extends AppCompatActivity {
             }
         });
     }
-
 //    public void onClick(View view) {
 //        Intent intent = new Intent(this, MainActivity.class);
 //        startActivity(intent);

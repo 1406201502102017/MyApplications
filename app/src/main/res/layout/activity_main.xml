@@ -322,4 +322,5 @@
             tools:ignore="TouchTargetSizeCheck" />
 
     </RadioGroup>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
